@@ -1,6 +1,6 @@
 # Conversor de Base Numérica
 
-Este é um programa simples em Python que converte números decimais para binário, octal ou hexadecimal, conforme escolhido pelo usuário.
+Este é um projeto desenvolvido em Python que converte números decimais para binário, octal ou hexadecimal, conforme escolhido pelo usuário.
 
 ## Funcionalidade
 1. O usuário insere um número decimal.
