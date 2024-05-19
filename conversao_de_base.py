@@ -39,13 +39,18 @@ elif select == "H" or select == "h":
     while decimal > 0: 
         #variável resto para pegar o resto do número decimal
         resto = decimal % 16
-        #variável hexa transforma o resto em string e soma o valor do próprio octa decimal
-        hexa = str(resto) + hexa
+        #se o resto for menor que 10 ele precisa ser convertido em letra
+        if resto < 10: 
+            #variável hexa transforma o resto em string e soma o valor do próprio octa decimal
+            hexa = str(resto) + hexa
+        else:
+            #subtrai 10 do resto definindo o valor de 0 à 5 para encontra a letra representante do valor dentro da lista
+            hexa = "ABCDEF"[resto - 10] + hexa
         #variável decimal é dividida por ela mesmo pegando somente o valor inteiro da operação
         decimal = decimal // 16
     #mostra o resultado o resultado do número digitado pelo usuário na base escolhida por ele
     print(hexa)
-    
 else: 
     #caso o usuário coloque um valor diferente da seleção
     print("Seleção inválida")
+    
